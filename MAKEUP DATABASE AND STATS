@@ -1,0 +1,19 @@
+CREATE TABLE makeup (id INTEGER PRIMARY KEY, category TEXT, shade TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO makeup VALUES(1, "blush", "rose", 5, 20);
+INSERT INTO makeup VALUES(2, "blush", "berry", 6, 20);
+INSERT INTO makeup VALUES(3, "blush", "coral", 4, 20);
+INSERT INTO makeup VALUES(4, "blush", "bronze", 3, 20);
+INSERT INTO makeup VALUES(5, "blush", "ruby", 4, 20);
+INSERT INTO makeup VALUES(6, "lipstick", "scarlet", 5, 15);
+INSERT INTO makeup VALUES(7, "lipstick", "wine", 4, 15);
+INSERT INTO makeup VALUES(8, "lipstick", "cherry", 5, 15);
+INSERT INTO makeup VALUES(9, "lipstick", "mauve", 6, 15);
+INSERT INTO makeup VALUES(10, "lipstick", "coffee", 5, 15);
+INSERT INTO makeup VALUES(11, "eyeshadow", "stardust", 4, 18);
+INSERT INTO makeup VALUES(12, "eyeshadow", "chrome", 3, 18);
+INSERT INTO makeup VALUES(13, "eyeshadow", "angel", 4, 18);
+INSERT INTO makeup VALUES(14, "eyeshadow", "mocha", 5, 18);
+INSERT INTO makeup VALUES(15, "eyeshadow", "dove", 6, 18);
+SELECT * FROM makeup ORDER BY price asc;
+SELECT SUM(quantity) FROM makeup;
